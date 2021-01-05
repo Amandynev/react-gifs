@@ -3,11 +3,9 @@ import Gif from './gif';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class GifList extends Component {
-   renderList = () => {
-    return this.props.gifs.map(gif =>
-
-        <Gif id={gif.id} key={gif.id} />
-      )};
+  renderList = () => {
+    return this.props.gifs.map(gif => <Gif id={gif.id} key={gif.id} />
+    )};
 
   render() {
     return (
@@ -19,4 +17,3 @@ class GifList extends Component {
 }
 
 export default GifList ;
-

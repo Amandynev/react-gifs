@@ -42,12 +42,12 @@ class App extends Component {
     //   { id: "3NtY188QaxDdC" }
     // ];
 
-    // l'app va definir sa fonctionsearch bar dans le constructor et ensuite va la passer à son enfant la props search bar qui est une fonction.
-
+ // l'app va definir sa fonctionsearch bar dans le constructor et ensuite va la passer à son enfant la props search bar qui est une fonction.
+ //  eci dessous ce sont les enfant de l'app
     return (
       <div>
         <div className="left-scene">
-          <SearchBar />
+          <SearchBar functionSearch={this.search} />
           <div className="selected-gif">
             <Gif id={this.state.selectedGifId} />
           </div>
