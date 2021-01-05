@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 // eslint-disable-next-line react/prefer-stateless-function
 class Gif extends Component {
   render() {
+    const src = `https://media.giphy.com/media/${this.props.id}/giphy.gif`;
     return (
-      <img src="https://media.giphy.com/media/3oEjHI8WJv4x6UPDB6/giphy.gif" alt="" className="gif" />
+      <img src={src} alt="" className="gif" />
     );
   }
 }
